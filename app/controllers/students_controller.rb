@@ -8,6 +8,14 @@ class StudentsController < ApplicationController
   def show
   end
 
+   def to_s
+    self.first_name + " " + self.last_name
+   end  
+
+  def activate
+    
+  end  
+
   private
 
     def set_student
